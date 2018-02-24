@@ -16,7 +16,12 @@
 		FA12402E203E2B18002A237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA12402D203E2B18002A237F /* Assets.xcassets */; };
 		FA124031203E2B18002A237F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA12402F203E2B18002A237F /* LaunchScreen.storyboard */; };
 		FA124039203E2B4C002A237F /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124038203E2B4C002A237F /* Component.swift */; };
-		FA12403D203EA143002A237F /* UILabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12403C203EA143002A237F /* UILabelComponent.swift */; };
+		FA124046204155A5002A237F /* ComponentRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124045204155A5002A237F /* ComponentRenderer.swift */; };
+		FA12404B2041CBEE002A237F /* ComponentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12404A2041CBEE002A237F /* ComponentLayout.swift */; };
+		FA1240562041D2E9002A237F /* UILabelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240542041D2E8002A237F /* UILabelComponent.swift */; };
+		FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */; };
+		FA1240592041D42F002A237F /* UIKitComponentAnchorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */; };
+		FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +56,12 @@
 		FA124030203E2B18002A237F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA124032203E2B18002A237F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA124038203E2B4C002A237F /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		FA12403C203EA143002A237F /* UILabelComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelComponent.swift; sourceTree = "<group>"; };
+		FA124045204155A5002A237F /* ComponentRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRenderer.swift; sourceTree = "<group>"; };
+		FA12404A2041CBEE002A237F /* ComponentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLayout.swift; sourceTree = "<group>"; };
+		FA1240542041D2E8002A237F /* UILabelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelComponent.swift; sourceTree = "<group>"; };
+		FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitComponentRenderer.swift; sourceTree = "<group>"; };
+		FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentAnchorLayout.swift; sourceTree = "<group>"; };
+		FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLayoutProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +113,7 @@
 		FA124008203E2ADB002A237F /* ComponentArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				FA12403B203EA130002A237F /* UIKit */,
-				FA124038203E2B4C002A237F /* Component.swift */,
+				FA1240492041C95E002A237F /* Sources */,
 				FA124009203E2ADB002A237F /* ComponentArchitecture.h */,
 				FA12400A203E2ADB002A237F /* Info.plist */,
 			);
@@ -144,9 +153,23 @@
 		FA12403B203EA130002A237F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA12403C203EA143002A237F /* UILabelComponent.swift */,
+				FA1240542041D2E8002A237F /* UILabelComponent.swift */,
+				FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */,
+				FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FA1240492041C95E002A237F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA12403B203EA130002A237F /* UIKit */,
+				FA124038203E2B4C002A237F /* Component.swift */,
+				FA124045204155A5002A237F /* ComponentRenderer.swift */,
+				FA12404A2041CBEE002A237F /* ComponentLayout.swift */,
+				FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA12403D203EA143002A237F /* UILabelComponent.swift in Sources */,
+				FA1240592041D42F002A237F /* UIKitComponentAnchorLayout.swift in Sources */,
+				FA12404B2041CBEE002A237F /* ComponentLayout.swift in Sources */,
+				FA124046204155A5002A237F /* ComponentRenderer.swift in Sources */,
+				FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */,
+				FA1240562041D2E9002A237F /* UILabelComponent.swift in Sources */,
 				FA124039203E2B4C002A237F /* Component.swift in Sources */,
+				FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -454,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -14,10 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let component = UILabelComponent()
-        component.props = [ "text": "UILabelComponent" ]
-
-        let componentRenderer = UIViewComponentRenderer(component: component, in: view)
-        componentRenderer.render()
+        let label = UILabelComponent(props: .init(text: "UILabelComponent", textAlignment: .center))
+        let renderer = UIKitComponentRenderer(component: label, in: view, layout: UIKitComponentAnchorLayout.pinnedToAll)
+        renderer.render()
     }
 }
