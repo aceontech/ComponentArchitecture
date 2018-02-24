@@ -22,6 +22,7 @@
 		FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */; };
 		FA1240592041D42F002A237F /* UIKitComponentAnchorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */; };
 		FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */; };
+		FA12405F20421F63002A237F /* UIKitComponentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12405E20421F63002A237F /* UIKitComponentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitComponentRenderer.swift; sourceTree = "<group>"; };
 		FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentAnchorLayout.swift; sourceTree = "<group>"; };
 		FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLayoutProvider.swift; sourceTree = "<group>"; };
+		FA12405E20421F63002A237F /* UIKitComponentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				FA1240542041D2E8002A237F /* UILabelComponent.swift */,
 				FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */,
 				FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */,
+				FA12405E20421F63002A237F /* UIKitComponentController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */,
 				FA1240562041D2E9002A237F /* UILabelComponent.swift in Sources */,
 				FA124039203E2B4C002A237F /* Component.swift in Sources */,
+				FA12405F20421F63002A237F /* UIKitComponentController.swift in Sources */,
 				FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

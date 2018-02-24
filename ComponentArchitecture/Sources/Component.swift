@@ -12,7 +12,6 @@ import ObjectiveC
 
 // MARK - Component
 
-/// A `Component` represents a renderable view component.
 public protocol Component: class {
     associatedtype Renderable
     associatedtype State

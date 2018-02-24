@@ -8,7 +8,6 @@
 
 import Foundation
 
-/// Renders a `Component`, using its props as parameters.
 public protocol ComponentRenderer {
     func render()
 }
