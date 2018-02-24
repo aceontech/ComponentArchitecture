@@ -13,14 +13,14 @@ import ObjectiveC
 // MARK - Component
 
 public protocol Component: class {
-    associatedtype Renderable
+    associatedtype Rendering
     associatedtype State
     associatedtype Props
 
     var state: State { get set }
 
     init(props: Props)
-    func render() -> Renderable
+    func render() -> Rendering
 }
 
 // MARK: - Component properties

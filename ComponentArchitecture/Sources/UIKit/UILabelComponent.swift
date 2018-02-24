@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public class UILabelComponent: Component {
+
     public struct Props {
         public let text: String
         public let textAlignment: NSTextAlignment

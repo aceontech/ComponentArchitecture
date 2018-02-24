@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class UIKitComponentController<C>: UIViewController where C: Component, C.Renderable: UIView {
+public class UIKitComponentController<C>: UIViewController where C: Component, C.Rendering: UIView {
     private let component: C
 
     public init(with component: C) {
@@ -29,7 +29,7 @@ public class UIKitComponentController<C>: UIViewController where C: Component, C
         view.leftAnchor.constraint(equalTo: container.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: container.rightAnchor).isActive = true
 
-        let renderer = UIKitComponentRenderer<C, UIKitComponentAnchorLayout>(component: component, in: container, layout: .init(pinTo: [ .left, .top, .right ]))
+        let renderer = UIKitComponentRenderer<C, UIKitComponentAnchorLayout>(component: component, in: container, layout: .pinnedToAll)
         renderer.render()
     }
 }

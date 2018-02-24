@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class UIKitComponentRenderer<C, L>: ComponentRenderer where C: Component, C.Renderable: UIView, L: ComponentLayout {
+public class UIKitComponentRenderer<C, L>: ComponentRenderer where C: Component, C.Rendering: UIView, L: ComponentLayout {
     private let component: C
     private weak var host: UIView?
     private var cache: UIView?
