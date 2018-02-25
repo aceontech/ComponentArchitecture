@@ -16,16 +16,35 @@ class ViewController: UIViewController {
 
         let label1 = UILabelComponent(props: .init(
             text: "Label 1",
+            textAlignment: .center,
             backgroundColor: .yellow
         ))
 
         let label2 = UILabelComponent(props: .init(
             text: "Label 2",
+            textAlignment: .center,
             backgroundColor: .cyan
         ))
 
+        let label3 = UILabelComponent(props: .init(
+            text: "Label 3",
+            textAlignment: .center,
+            backgroundColor: .green
+        ))
+
+        let stack2 = UIStackViewComponent(props: .init(
+            children: [
+                .any(label2),
+                .any(label3)
+            ],
+            axis: .horizontal
+        ))
+
         let stack = UIStackViewComponent(props: .init(
-            children: [ label1, label2 ]
+            children: [
+                .any(label1),
+                .any(stack2)
+            ]
         ))
 
         let container = UIKitComponentController(with: stack)

@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class UIStackViewComponent<Child>: Component where Child: Component, Child.Rendering: UIView {
+public class UIStackViewComponent: Component {
     public typealias State = Void
 
     public struct Props: ComponentPropsWithUIViewChildren {
-        public let children: [Child]
+        public let children: [AnyUIViewComponent]
         public let axis: UILayoutConstraintAxis
         public let distribution: UIStackViewDistribution
 
-        public init(children: [Child], axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually) {
+        public init(children: [AnyUIViewComponent], axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually) {
             self.children = children
             self.axis = axis
             self.distribution = distribution

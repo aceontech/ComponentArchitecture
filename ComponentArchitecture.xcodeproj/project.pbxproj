@@ -26,6 +26,7 @@
 		FA1240612042B4E1002A237F /* UIStackViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240602042B4E1002A237F /* UIStackViewComponent.swift */; };
 		FA1240632043170E002A237F /* ComponentProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240622043170E002A237F /* ComponentProps.swift */; };
 		FA124065204317C3002A237F /* ComponentPropsWithUIViewChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */; };
+		FA12406720436D4D002A237F /* AnyUIViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12406620436D4D002A237F /* AnyUIViewComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		FA1240602042B4E1002A237F /* UIStackViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewComponent.swift; sourceTree = "<group>"; };
 		FA1240622043170E002A237F /* ComponentProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProps.swift; sourceTree = "<group>"; };
 		FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPropsWithUIViewChildren.swift; sourceTree = "<group>"; };
+		FA12406620436D4D002A237F /* AnyUIViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIViewComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */,
 				FA12405E20421F63002A237F /* UIKitComponentController.swift */,
 				FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */,
+				FA12406620436D4D002A237F /* AnyUIViewComponent.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				FA124039203E2B4C002A237F /* Component.swift in Sources */,
 				FA12405F20421F63002A237F /* UIKitComponentController.swift in Sources */,
 				FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */,
+				FA12406720436D4D002A237F /* AnyUIViewComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
