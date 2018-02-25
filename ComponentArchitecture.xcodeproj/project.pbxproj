@@ -23,6 +23,9 @@
 		FA1240592041D42F002A237F /* UIKitComponentAnchorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */; };
 		FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */; };
 		FA12405F20421F63002A237F /* UIKitComponentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12405E20421F63002A237F /* UIKitComponentController.swift */; };
+		FA1240612042B4E1002A237F /* UIStackViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240602042B4E1002A237F /* UIStackViewComponent.swift */; };
+		FA1240632043170E002A237F /* ComponentProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240622043170E002A237F /* ComponentProps.swift */; };
+		FA124065204317C3002A237F /* ComponentPropsWithUIViewChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentAnchorLayout.swift; sourceTree = "<group>"; };
 		FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentLayoutProvider.swift; sourceTree = "<group>"; };
 		FA12405E20421F63002A237F /* UIKitComponentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentController.swift; sourceTree = "<group>"; };
+		FA1240602042B4E1002A237F /* UIStackViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewComponent.swift; sourceTree = "<group>"; };
+		FA1240622043170E002A237F /* ComponentProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProps.swift; sourceTree = "<group>"; };
+		FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPropsWithUIViewChildren.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +162,11 @@
 			isa = PBXGroup;
 			children = (
 				FA1240542041D2E8002A237F /* UILabelComponent.swift */,
+				FA1240602042B4E1002A237F /* UIStackViewComponent.swift */,
 				FA1240552041D2E9002A237F /* UIKitComponentRenderer.swift */,
 				FA1240582041D42F002A237F /* UIKitComponentAnchorLayout.swift */,
 				FA12405E20421F63002A237F /* UIKitComponentController.swift */,
+				FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 				FA124045204155A5002A237F /* ComponentRenderer.swift */,
 				FA12404A2041CBEE002A237F /* ComponentLayout.swift */,
 				FA12405A2041D44F002A237F /* ComponentLayoutProvider.swift */,
+				FA1240622043170E002A237F /* ComponentProps.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -321,6 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1240592041D42F002A237F /* UIKitComponentAnchorLayout.swift in Sources */,
+				FA1240612042B4E1002A237F /* UIStackViewComponent.swift in Sources */,
+				FA124065204317C3002A237F /* ComponentPropsWithUIViewChildren.swift in Sources */,
+				FA1240632043170E002A237F /* ComponentProps.swift in Sources */,
 				FA12404B2041CBEE002A237F /* ComponentLayout.swift in Sources */,
 				FA124046204155A5002A237F /* ComponentRenderer.swift in Sources */,
 				FA12405B2041D44F002A237F /* ComponentLayoutProvider.swift in Sources */,

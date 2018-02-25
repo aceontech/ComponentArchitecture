@@ -23,7 +23,7 @@ public protocol Component: class {
     func render() -> Rendering
 }
 
-// MARK: - Component properties
+// MARK: - Default implementations
 
 private var stateKey: UInt8 = 0
 private var rendererKey: UInt8 = 0

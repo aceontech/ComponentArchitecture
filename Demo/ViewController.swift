@@ -14,12 +14,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let label = UILabelComponent(props: .init(
-            text: "UILabelComponent",
-            textAlignment: .center
+        let label1 = UILabelComponent(props: .init(
+            text: "Label 1",
+            backgroundColor: .yellow
         ))
 
-        let container = UIKitComponentController(with: label)
+        let label2 = UILabelComponent(props: .init(
+            text: "Label 2",
+            backgroundColor: .cyan
+        ))
+
+        let stack = UIStackViewComponent(props: .init(
+            children: [ label1, label2 ]
+        ))
+
+        let container = UIKitComponentController(with: stack)
         addChildViewController(container)
         view.addSubview(container.view)
     }

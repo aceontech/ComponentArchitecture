@@ -14,10 +14,12 @@ public class UILabelComponent: Component {
     public struct Props {
         public let text: String
         public let textAlignment: NSTextAlignment
+        public let backgroundColor: UIColor
 
-        public init(text: String, textAlignment: NSTextAlignment = .left) {
+        public init(text: String, textAlignment: NSTextAlignment = .left, backgroundColor: UIColor = .clear) {
             self.text = text
             self.textAlignment = textAlignment
+            self.backgroundColor = backgroundColor
         }
     }
 
@@ -32,6 +34,7 @@ public class UILabelComponent: Component {
         let label = UILabel(frame: .zero)
         label.text = props.text
         label.textAlignment = props.textAlignment
+        label.backgroundColor = props.backgroundColor
         return label
     }
 }

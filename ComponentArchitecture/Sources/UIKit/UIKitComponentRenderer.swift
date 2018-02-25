@@ -11,7 +11,7 @@ import Foundation
 public class UIKitComponentRenderer<C, L>: ComponentRenderer where C: Component, C.Rendering: UIView, L: ComponentLayout {
     private let component: C
     private weak var host: UIView?
-    private var cache: UIView?
+    private var cache: C.Rendering?
     private let layout: L
 
     public init(component: C, in host: UIView, layout: L) {
