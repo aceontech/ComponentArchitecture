@@ -12,14 +12,14 @@ public class UIStackViewComponent: Component {
     public typealias State = Void
 
     public struct Props: ComponentPropsWithUIViewChildren {
-        public let children: [AnyUIViewComponent]
         public let axis: UILayoutConstraintAxis
         public let distribution: UIStackViewDistribution
+        public let children: [AnyUIViewComponent]
 
-        public init(children: [AnyUIViewComponent], axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually) {
-            self.children = children
+        public init(axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually, children: [AnyUIViewComponent]) {
             self.axis = axis
             self.distribution = distribution
+            self.children = children
         }
     }
 
