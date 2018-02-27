@@ -16,14 +16,12 @@ class CustomComponentA: Component {
     }
 
     func render() -> UIView {
-        return UIStackViewComponent(props: .init(
-            children: [
-                .any(UILabelComponent(props: .init(text: "Label", backgroundColor: .yellow))),
-                .any(UIStackViewComponent(props: .init(axis: .horizontal, children: [
-                    .any(UILabelComponent(props: .init(text: "Button 1", backgroundColor: .cyan))),
-                    .any(UILabelComponent(props: .init(text: "Button 2", backgroundColor: .blue)))
-                ])))
-            ]
-        )).render()
+        return .stack(children: [
+            .label(.init(text: "Label 1", backgroundColor: .yellow)),
+            .stack(.init(axis: .horizontal), children: [
+                .label(.init(text: "Label 2", backgroundColor: .cyan)),
+                .label(.init(text: "Label 3", backgroundColor: .green))
+            ])
+        ])
     }
 }

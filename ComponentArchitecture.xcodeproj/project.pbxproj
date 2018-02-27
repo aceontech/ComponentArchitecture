@@ -28,6 +28,7 @@
 		FA124065204317C3002A237F /* ComponentPropsWithUIViewChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */; };
 		FA12406720436D4D002A237F /* AnyUIViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12406620436D4D002A237F /* AnyUIViewComponent.swift */; };
 		FA12406920436EE1002A237F /* CustomComponentA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12406820436EE1002A237F /* CustomComponentA.swift */; };
+		FA1240712044B773002A237F /* UIKitComponentDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240702044B773002A237F /* UIKitComponentDSL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPropsWithUIViewChildren.swift; sourceTree = "<group>"; };
 		FA12406620436D4D002A237F /* AnyUIViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIViewComponent.swift; sourceTree = "<group>"; };
 		FA12406820436EE1002A237F /* CustomComponentA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentA.swift; sourceTree = "<group>"; };
+		FA1240702044B773002A237F /* UIKitComponentDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentDSL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				FA12405E20421F63002A237F /* UIKitComponentController.swift */,
 				FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */,
 				FA12406620436D4D002A237F /* AnyUIViewComponent.swift */,
+				FA1240702044B773002A237F /* UIKitComponentDSL.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				FA1240562041D2E9002A237F /* UILabelComponent.swift in Sources */,
 				FA124039203E2B4C002A237F /* Component.swift in Sources */,
 				FA12405F20421F63002A237F /* UIKitComponentController.swift in Sources */,
+				FA1240712044B773002A237F /* UIKitComponentDSL.swift in Sources */,
 				FA1240572041D2E9002A237F /* UIKitComponentRenderer.swift in Sources */,
 				FA12406720436D4D002A237F /* AnyUIViewComponent.swift in Sources */,
 			);

@@ -8,5 +8,5 @@
 
 import Foundation
 
-public protocol ComponentPropsWithUIViewChildren: ComponentPropsWithChildren
+public protocol ComponentPropsWithUIViewChildren: HasChildComponents
 where Child.Rendering: UIView {}

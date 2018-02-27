@@ -8,10 +8,7 @@
 
 import Foundation
 
-public protocol ComponentProps {
-}
-
-public protocol ComponentPropsWithChildren: ComponentProps {
+public protocol HasChildComponents {
     associatedtype Child: Component
     var children: [Child] { get }
 }

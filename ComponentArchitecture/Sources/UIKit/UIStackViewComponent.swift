@@ -8,30 +8,34 @@
 
 import Foundation
 
-public class UIStackViewComponent: Component {
-    public typealias State = Void
+public class UIStackViewComponent: Component, HasChildComponents {
 
-    public struct Props: ComponentPropsWithUIViewChildren {
+    public struct Props {
         public let axis: UILayoutConstraintAxis
         public let distribution: UIStackViewDistribution
-        public let children: [AnyUIViewComponent]
 
-        public init(axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually, children: [AnyUIViewComponent]) {
+        public init(axis: UILayoutConstraintAxis = .vertical, distribution: UIStackViewDistribution = .fillEqually) {
             self.axis = axis
             self.distribution = distribution
-            self.children = children
         }
     }
 
     private let props: Props
+    public typealias State = Void
+
+    public private(set) var children = [AnyUIViewComponent]()
+
+    public convenience init(props: Props = Props(), children: [Child]) {
+        self.init(props: props)
+        self.children = children
+    }
 
     public required init(props: Props) {
         self.props = props
     }
 
     public func render() -> UIStackView {
-        let children = props.children.map { $0.render() }
-        let stackView = UIStackView(arrangedSubviews: children)
+        let stackView = UIStackView(arrangedSubviews: children.map { $0.render() })
         stackView.axis = props.axis
         stackView.distribution = props.distribution
         return stackView
