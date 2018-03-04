@@ -21,6 +21,16 @@ class CustomComponent: Component {
 
 <img src="Docs/demo.png" width="250"/>
 
+## Project status
+
+Pre-alpha / concept-phase.
+
+- [x] MVP with support for UILabel & UIStackView components
+- [ ] Support for all common UIKit classes
+- [ ] Support for Flexbox layouting
+- [ ] Support for Markup rendering
+- [ ] Direct integration with ReSwift 
+
 ## `Component` protocol
 
 Components that adopt the `Component` protocol, declare their input properties (`Props`), changeable `State`, and their `Rendering` output. When targeting iOS, this'll be `UIView` or one of its subclasses.
