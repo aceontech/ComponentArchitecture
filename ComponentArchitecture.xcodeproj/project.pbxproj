@@ -27,7 +27,6 @@
 		FA1240632043170E002A237F /* ComponentProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240622043170E002A237F /* ComponentProps.swift */; };
 		FA124065204317C3002A237F /* ComponentPropsWithUIViewChildren.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */; };
 		FA12406720436D4D002A237F /* AnyUIViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12406620436D4D002A237F /* AnyUIViewComponent.swift */; };
-		FA12406920436EE1002A237F /* CustomComponentA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12406820436EE1002A237F /* CustomComponentA.swift */; };
 		FA1240712044B773002A237F /* UIKitComponentDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1240702044B773002A237F /* UIKitComponentDSL.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 		FA1240622043170E002A237F /* ComponentProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProps.swift; sourceTree = "<group>"; };
 		FA124064204317C3002A237F /* ComponentPropsWithUIViewChildren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPropsWithUIViewChildren.swift; sourceTree = "<group>"; };
 		FA12406620436D4D002A237F /* AnyUIViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIViewComponent.swift; sourceTree = "<group>"; };
-		FA12406820436EE1002A237F /* CustomComponentA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentA.swift; sourceTree = "<group>"; };
 		FA1240702044B773002A237F /* UIKitComponentDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitComponentDSL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 			children = (
 				FA124026203E2B18002A237F /* AppDelegate.swift */,
 				FA124028203E2B18002A237F /* ViewController.swift */,
-				FA12406820436EE1002A237F /* CustomComponentA.swift */,
 				FA12402A203E2B18002A237F /* Main.storyboard */,
 				FA12402F203E2B18002A237F /* LaunchScreen.storyboard */,
 				FA12402D203E2B18002A237F /* Assets.xcassets */,
@@ -358,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA12406920436EE1002A237F /* CustomComponentA.swift in Sources */,
 				FA124029203E2B18002A237F /* ViewController.swift in Sources */,
 				FA124027203E2B18002A237F /* AppDelegate.swift in Sources */,
 			);
